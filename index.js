@@ -7,6 +7,7 @@ function solution(A, X) {
     var l = 0;
     var r = N - 1;
     while (l < r) {
+        // var m = Math.floor((l + r) / 2); -- Original line of code, changed to Math.ceil
         var m = Math.ceil((l + r) / 2);
         if (A[m] > X) {
             r = m - 1;
